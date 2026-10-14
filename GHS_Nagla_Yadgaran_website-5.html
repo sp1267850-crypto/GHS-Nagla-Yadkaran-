@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>राजकीय हाई स्कूल नगला यादगरन</title>
+<meta name="description" content="राजकीय हाई स्कूल नगला यादगरन, पुरनपुर अमापुर, कासगंज, उत्तर प्रदेश">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+:root{
+  --navy:#071a33; --blue:#0b63ce; --cyan:#16c7d9; --gold:#ffca45;
+  --light:#f5f8fc; --text:#17243a; --muted:#617087; --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Hind,Arial,sans-serif;color:var(--text);background:var(--light);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1150px,92%);margin:auto}
+header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(7,26,51,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.12)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;color:white;font-weight:700}
+.logo-mark{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--gold),#fff0a7);display:grid;place-items:center;color:var(--navy);font-family:Poppins;font-weight:800;box-shadow:0 8px 25px #0004}
+.logo small{display:block;color:#b9d5f5;font-size:11px;font-weight:400}
+.nav-links{display:flex;gap:24px;color:#e8f2ff;font-size:15px}
+.nav-links a:hover{color:var(--gold)}
+.menu{display:none;color:white;font-size:28px;cursor:pointer}
+
+.hero{min-height:100vh;padding:145px 0 75px;background:
+ radial-gradient(circle at 85% 20%,#16c7d933,transparent 28%),
+ radial-gradient(circle at 15% 70%,#0b63ce33,transparent 30%),
+ linear-gradient(135deg,#06172e,#0b2e59 55%,#087b9b);color:white;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff1c;border-radius:50%;right:-120px;bottom:-170px;box-shadow:0 0 0 70px #ffffff08,0 0 0 140px #ffffff04}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border:1px solid #ffffff30;border-radius:999px;background:#ffffff10;color:#dceeff;margin-bottom:22px}
+.hero h1{font-family:Poppins,Hind,sans-serif;font-size:clamp(38px,6vw,76px);line-height:1.05;max-width:850px;letter-spacing:-2px}
+.hero h1 span{color:var(--gold)}
+.hero p{max-width:700px;margin:22px 0 30px;color:#d9e8f8;font-size:19px}
+.btns{display:flex;gap:13px;flex-wrap:wrap}
+.btn{padding:13px 21px;border-radius:12px;font-weight:700;display:inline-flex;align-items:center;gap:8px;transition:.25s}
+.btn.primary{background:var(--gold);color:var(--navy)}
+.btn.secondary{border:1px solid #ffffff40;background:#ffffff0d;color:white}
+.btn:hover{transform:translateY(-3px)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:55px;max-width:720px}
+.stat{padding:18px;border:1px solid #ffffff18;border-radius:18px;background:#ffffff0b;backdrop-filter:blur(8px)}
+.stat b{font-size:26px;display:block;color:var(--gold)}
+.stat span{color:#c9d9e9;font-size:14px}
+
+section{padding:88px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 45px}
+.kicker{color:var(--blue);font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:13px}
+.section-head h2{font-family:Poppins,Hind;font-size:clamp(28px,4vw,42px);color:var(--navy);margin:7px 0}
+.section-head p{color:var(--muted)}
+
+.about{background:white}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:stretch}
+.panel{padding:30px;border-radius:25px;background:linear-gradient(145deg,#f5f9ff,#fff);border:1px solid #e5edf7;box-shadow:0 15px 45px #163a5d0b}
+.panel h3{font-size:25px;color:var(--navy);margin-bottom:12px}
+.principal{display:flex;gap:18px;align-items:center;margin-top:24px;padding:17px;border-radius:18px;background:#edf6ff}
+.avatar{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--cyan));color:white;font-size:26px;font-weight:800}
+.principal strong{display:block;font-size:19px}
+.principal span{color:var(--muted);font-size:14px}
+
+.facilities{background:#f5f8fc}
+.facility-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.card{padding:22px;border-radius:20px;background:white;border:1px solid #e7eef6;box-shadow:0 10px 30px #15385b0b;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 35px #15385b18}
+.icon{font-size:30px;margin-bottom:9px}
+.card h3{font-size:18px;color:var(--navy);margin-bottom:4px}
+.card p{font-size:14px;color:var(--muted)}
+
+.teachers{background:white}
+.teacher-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.teacher{padding:24px;text-align:center;border-radius:22px;background:#f7faff;border:1px solid #e2ebf5}
+.teacher .avatar{margin:0 auto 14px}
+.teacher h3{font-size:18px;color:var(--navy)}
+.teacher p{font-size:13px;color:var(--muted);margin:5px 0 12px}
+.call{display:inline-block;padding:8px 13px;border-radius:10px;background:#eaf4ff;color:var(--blue);font-size:13px;font-weight:700}
+
+.info{background:linear-gradient(135deg,#071a33,#0a4671);color:white}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.info-card{padding:28px;border-radius:23px;background:#ffffff0d;border:1px solid #ffffff18}
+.info-card h3{color:var(--gold);margin-bottom:15px;font-size:23px}
+.time{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid #ffffff18}
+.time:last-child{border:0}
+.time span{color:#c9d9e9}
+.time b{color:white}
+
+.contact{background:white}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{padding:30px;border-radius:25px;background:#f6f9fd;border:1px solid #e3ebf5}
+.contact-row{display:flex;gap:14px;margin:17px 0}
+.contact-row .icon{font-size:22px;margin:0}
+.contact-row strong{display:block;color:var(--navy)}
+.contact-row span{color:var(--muted)}
+footer{background:#041225;color:#b7c8da;padding:30px 0;text-align:center}
+footer strong{color:white}
+.footer-note{font-size:13px;margin-top:7px}
+
+.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:900px){
+ .nav-links{display:none;position:absolute;top:74px;left:0;width:100%;background:#071a33;padding:18px 5%;flex-direction:column;gap:15px}
+ .nav-links.open{display:flex}.menu{display:block}
+ .facility-grid,.teacher-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:650px){
+ .hero{padding-top:125px}.stats{grid-template-columns:1fr}
+ .about-grid,.info-grid,.contact-grid{grid-template-columns:1fr}
+ .facility-grid,.teacher-grid{grid-template-columns:1fr}
+ section{padding:65px 0}
+ .hero h1{letter-spacing:-1px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">
+      <div class="logo-mark">GHS</div>
+      <div>राजकीय हाई स्कूल<small>नगला यादगरन • कासगंज</small></div>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">विद्यालय</a><a href="#facilities">सुविधाएँ</a><a href="#teachers">शिक्षक</a>
+      <a href="#timing">समय</a><a href="#contact">संपर्क</a>
+    </nav>
+    <div class="menu" id="menu">☰</div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container">
+    <div class="badge">✦ शिक्षा • संस्कार • उत्कृष्टता</div>
+    <h1>राजकीय हाई स्कूल<br><span>नगला यादगरन</span></h1>
+    <p>पुरनपुर, अमापुर, कासगंज, उत्तर प्रदेश — ज्ञान, अनुशासन, रचनात्मकता और उज्ज्वल भविष्य की ओर एक मजबूत कदम।</p>
+    <div class="btns">
+      <a class="btn primary" href="#facilities">विद्यालय की सुविधाएँ →</a>
+      <a class="btn secondary" href="#contact">संपर्क जानकारी</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>कक्षा 9–10</b><span>हाई स्कूल शिक्षा</span></div>
+      <div class="stat"><b>डिजिटल</b><span>स्मार्ट कक्षा सुविधा</span></div>
+      <div class="stat"><b>समग्र</b><span>शिक्षा + खेल + रचनात्मकता</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">हमारा विद्यालय</div><h2>सीखने के लिए बेहतर वातावरण</h2><p>विद्यालय विद्यार्थियों को शिक्षा के साथ अनुशासन, रचनात्मकता, खेल और जीवन-मूल्यों से जोड़ने का प्रयास करता है।</p></div>
+  <div class="about-grid">
+   <div class="panel reveal">
+    <h3>विद्यालय परिचय</h3>
+    <p>राजकीय हाई स्कूल नगला यादगरन में कक्षा 9वीं और 10वीं के विद्यार्थियों के लिए शैक्षिक एवं सह-पाठ्यक्रम गतिविधियों का वातावरण उपलब्ध है। विद्यालय का उद्देश्य विद्यार्थियों के सर्वांगीण विकास को बढ़ावा देना है।</p>
+    <div class="principal"><div class="avatar">RP</div><div><strong>रिचा प्रतिहार</strong><span>प्रधानाचार्य</span></div></div>
+   </div>
+   <div class="panel reveal">
+    <h3>हमारी प्राथमिकताएँ</h3>
+    <p>सुरक्षित परिसर, स्वच्छता, डिजिटल शिक्षा, विज्ञान एवं कंप्यूटर आधारित सीखने, खेल, योग, कला-साहित्य और अभिभावक-शिक्षक सहभागिता पर विशेष ध्यान।</p>
+    <div class="principal"><div class="avatar">9–10</div><div><strong>हाई स्कूल स्तर</strong><span>कक्षा 9वीं एवं 10वीं</span></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="facilities" id="facilities">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">Campus Facilities</div><h2>विद्यालय की प्रमुख सुविधाएँ</h2><p>विद्यार्थियों की पढ़ाई, स्वास्थ्य, खेल और रचनात्मक विकास के लिए विविध सुविधाएँ।</p></div>
+  <div class="facility-grid">
+   <div class="card reveal"><div class="icon">📚</div><h3>निःशुल्क पाठ्यपुस्तकें</h3><p>विद्यार्थियों के लिए निःशुल्क पाठ्यपुस्तक सुविधा।</p></div>
+   <div class="card reveal"><div class="icon">📖</div><h3>लाइब्रेरी</h3><p>पठन-पाठन और ज्ञानवर्धन के लिए पुस्तकालय।</p></div>
+   <div class="card reveal"><div class="icon">🔬</div><h3>विज्ञान प्रयोगशाला</h3><p>प्रयोगात्मक विज्ञान सीखने का अवसर।</p></div>
+   <div class="card reveal"><div class="icon">💻</div><h3>कंप्यूटर लैब</h3><p>कंप्यूटर आधारित सीखने की सुविधा।</p></div>
+   <div class="card reveal"><div class="icon">🧑‍💻</div><h3>ट्रेड</h3><p>व्यावसायिक एवं कौशल आधारित सीखने के अवसर।</p></div>
+   <div class="card reveal"><div class="icon">🖥️</div><h3>स्मार्ट / डिजिटल कक्षा</h3><p>आधुनिक डिजिटल शिक्षण का वातावरण।</p></div>
+   <div class="card reveal"><div class="icon">💧</div><h3>स्वच्छ पेयजल</h3><p>विद्यार्थियों के लिए स्वच्छ पेयजल सुविधा।</p></div>
+   <div class="card reveal"><div class="icon">🚻</div><h3>अलग शौचालय</h3><p>छात्र एवं छात्राओं के लिए अलग-अलग शौचालय।</p></div>
+   <div class="card reveal"><div class="icon">💡</div><h3>बिजली एवं पंखे</h3><p>कक्षाओं में बिजली और पंखों की सुविधा।</p></div>
+   <div class="card reveal"><div class="icon">🪑</div><h3>डेस्क-बेंच</h3><p>कक्षाओं में विद्यार्थियों के लिए बैठने की व्यवस्था।</p></div>
+   <div class="card reveal"><div class="icon">⚽</div><h3>खेल मैदान</h3><p>खेलकूद और शारीरिक विकास के लिए मैदान।</p></div>
+   <div class="card reveal"><div class="icon">🏅</div><h3>खेल सामग्री</h3><p>विभिन्न खेल गतिविधियों के लिए सामग्री।</p></div>
+   <div class="card reveal"><div class="icon">🌳</div><h3>हरियाली एवं बागान</h3><p>हरा-भरा और सकारात्मक विद्यालय परिसर।</p></div>
+   <div class="card reveal"><div class="icon">🩺</div><h3>स्वास्थ्य सुविधा</h3><p>विद्यार्थियों के स्वास्थ्य पर ध्यान।</p></div>
+   <div class="card reveal"><div class="icon">🍲</div><h3>मध्याह्न भोजन</h3><p>सरकारी व्यवस्था के अनुसार मध्याह्न भोजन।</p></div>
+   <div class="card reveal"><div class="icon">🎓</div><h3>छात्रवृत्ति एवं योजनाएँ</h3><p>सरकारी छात्रवृत्ति एवं योजनाओं की सुविधा।</p></div>
+   <div class="card reveal"><div class="icon">🛡️</div><h3>सुरक्षित परिसर</h3><p>विद्यार्थियों के लिए सुरक्षित विद्यालय वातावरण।</p></div>
+   <div class="card reveal"><div class="icon">🙏</div><h3>प्रार्थना सभा</h3><p>दैनिक अनुशासन और सामूहिक सहभागिता।</p></div>
+   <div class="card reveal"><div class="icon">🎨</div><h3>कला एवं साहित्य</h3><p>रचनात्मक और साहित्यिक गतिविधियों के अवसर।</p></div>
+   <div class="card reveal"><div class="icon">🧘</div><h3>खेलकूद एवं योग</h3><p>शारीरिक स्वास्थ्य और मानसिक संतुलन के लिए गतिविधियाँ।</p></div>
+   <div class="card reveal"><div class="icon">🤝</div><h3>अभिभावक-शिक्षक बैठक</h3><p>विद्यार्थियों की प्रगति के लिए अभिभावक सहभागिता।</p></div>
+   <div class="card reveal"><div class="icon">📝</div><h3>परीक्षा सुविधा</h3><p>शैक्षिक मूल्यांकन और परीक्षाओं की व्यवस्था।</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="teachers" id="teachers">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">Our Team</div><h2>विद्यालय की टीम</h2><p>विद्यार्थियों के मार्गदर्शन और शिक्षा के लिए समर्पित टीम।</p></div>
+  <div class="teacher-grid">
+   <div class="teacher reveal"><div class="avatar">RP</div><h3>रिचा प्रतिहार</h3><p>प्रधानाचार्य</p><a class="call" href="tel:9651604224">📞 9651604224</a></div>
+   <div class="teacher reveal"><div class="avatar">BP</div><h3>बृजेश गौरी प्रतिहार</h3><p>शिक्षक</p><a class="call" href="tel:9105728992">📞 9105728992</a></div>
+   <div class="teacher reveal"><div class="avatar">MS</div><h3>माया सोनकर</h3><p>शिक्षक</p><a class="call" href="tel:9026371430">📞 9026371430</a></div>
+   <div class="teacher reveal"><div class="avatar">PG</div><h3>प्रीती पुंढीर</h3><p>शिक्षक</p><a class="call" href="tel:9917300243">📞 9917300243</a></div>
+   <div class="teacher reveal"><div class="avatar">SK</div><h3>सुदेश कुमार</h3><p>शिक्षक</p><a class="call" href="tel:8006545981">📞 8006545981</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="info" id="timing">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker" style="color:#ffca45">School Information</div><h2 style="color:white">विद्यालय समय एवं कक्षाएँ</h2><p style="color:#bcd0e4">मौसम के अनुसार विद्यालय का समय।</p></div>
+  <div class="info-grid">
+   <div class="info-card reveal"><h3>⏰ विद्यालय समय</h3>
+    <div class="time"><span>❄️ विंटर टाइम</span><b>सुबह 9:30 — दोपहर 3:30</b></div>
+    <div class="time"><span>☀️ समर टाइम</span><b>सुबह 7:30 — दोपहर 1:30</b></div>
+   </div>
+   <div class="info-card reveal"><h3>🎓 कक्षाएँ</h3>
+    <div class="time"><span>कक्षा 9वीं</span><b>हाई स्कूल</b></div>
+    <div class="time"><span>कक्षा 10वीं</span><b>हाई स्कूल</b></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">Contact</div><h2>विद्यालय से संपर्क करें</h2><p>पता और आवश्यक संपर्क जानकारी यहाँ उपलब्ध है।</p></div>
+  <div class="contact-grid">
+   <div class="contact-card reveal">
+    <div class="contact-row"><div class="icon">📍</div><div><strong>विद्यालय का पता</strong><span>पुरनपुर, अमापुर, कासगंज, 8R रोड, अमापुर, उत्तर प्रदेश</span></div></div>
+    <div class="contact-row"><div class="icon">🏫</div><div><strong>विद्यालय</strong><span>राजकीय हाई स्कूल नगला यादगरन</span></div></div>
+   </div>
+   <div class="contact-card reveal">
+    <div class="contact-row"><div class="icon">👩‍🏫</div><div><strong>प्रधानाचार्य</strong><span>रिचा प्रतिहार</span></div></div>
+    <div class="contact-row"><div class="icon">📞</div><div><strong>प्रधानाचार्य संपर्क</strong><span>9651604224</span></div></div>
+    <a class="btn primary" href="tel:9651604224">📞 अभी संपर्क करें</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container"><strong>राजकीय हाई स्कूल नगला यादगरन</strong><div class="footer-note">पुरनपुर, अमापुर, कासगंज, उत्तर प्रदेश • शिक्षा, संस्कार और उज्ज्वल भविष्य</div><div class="footer-note">Designed and Developed by <strong>Mr. Raja Bhaiya</strong></div></div>
+</footer>
+
+<script>
+const menu=document.getElementById('menu'), links=document.getElementById('navLinks');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const obs=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')});
+},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
